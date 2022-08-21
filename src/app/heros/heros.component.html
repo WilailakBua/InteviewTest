@@ -1,0 +1,26 @@
+<mat-card class="marginList">
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-6" style="margin-bottom: 2%;">
+                <button mat-button color="primary" (click)="onClickHome()">Home</button>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <h1>My Heros</h1>
+        </div>
+
+
+
+        <div>
+            <ng-container *ngFor="let hero of myHero">
+                <div (click)="onClickHeroName(hero.name)">
+                    {{hero.number}} {{hero.name}}
+                </div>
+            </ng-container>
+        </div>
+
+        <h3 style="margin-top: 5%">My hero is {{clickHero}}</h3>
+    </div>
+</mat-card>

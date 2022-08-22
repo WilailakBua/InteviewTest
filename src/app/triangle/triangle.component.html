@@ -1,0 +1,36 @@
+<mat-card class="marginList">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-6" style="margin-bottom: 2%;">
+                <button mat-button color="primary" (click)="onClickHome()">Home</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <h1>Calculate Triangle</h1>
+        </div>
+        <div>
+            <label>Base : </label>
+            <mat-form-field appearance="outline">
+                <mat-label>Base</mat-label>
+                <input matInput type="number" placeholder="Base" [(ngModel)]="baseVal">
+              
+            </mat-form-field>
+        </div>
+        <div>
+            <label>Height : </label>
+            <mat-form-field appearance="outline">
+                <mat-label>Height</mat-label>
+                <input matInput type="number" placeholder="Height" [(ngModel)]="heightVal">
+              
+            </mat-form-field>
+        </div>
+        <div>
+            <button mat-button color="accent" (click)="onClickCal()">Calculate</button>
+        </div>
+        <div>
+            <label>
+                Area is {{ answer }}
+            </label>
+        </div>
+    </div>
+</mat-card>

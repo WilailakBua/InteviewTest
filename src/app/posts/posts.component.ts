@@ -25,16 +25,10 @@ export class PostsComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    console.log('>>>>>>>>>>>>>>>>>>>>>>');
     
     this.heroSericeService.getData().subscribe(
       (res) => {
-        console.log(res);
         this.data = res;
-
-        console.log(this.data);
-
-        
         this.dataSource = new MatTableDataSource<any>(this.data);
       });
   }

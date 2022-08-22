@@ -24,8 +24,17 @@ export class HomeComponent implements OnInit {
   onClickHeroApp() {
     this.router.navigateByUrl('heros');
   }
+
   onClickPost() {
     this.router.navigateByUrl('posts');
+  }
+
+  onClickTriangle() {
+    this.router.navigateByUrl('triangle');
+
+  }
+  onClickCritizen() {
+    this.router.navigateByUrl('critizen');
 
   }
 }

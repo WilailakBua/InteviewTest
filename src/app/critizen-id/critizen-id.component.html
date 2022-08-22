@@ -1,0 +1,50 @@
+<mat-card class="marginList">
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-6" style="margin-bottom: 2%;">
+                <button mat-button color="primary" (click)="onClickHome()">Home</button>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <h1>
+                Critizen Id
+            </h1>
+        </div>
+
+        <div>
+            <label>Critizen Id : </label>
+            <mat-form-field appearance="outline">
+                <mat-label>Critizen Id</mat-label>
+                <input matInput type="number" placeholder="Critizen Id" [(ngModel)]="critizenIdVal">
+
+            </mat-form-field>
+        </div>
+        <div>
+            <button mat-button color="accent" (click)="onClickCal()">Calculate</button>
+        </div>
+        <div>
+            <label>
+                Output is {{ answer }}
+            </label>
+
+        </div>
+        <div>
+            <label>
+                "success": {{status}}
+            </label>
+        </div>
+        <div>
+            <label>
+                "error_code": {{error_code}}
+            </label>
+        </div>
+        <div>
+            <label>
+                "error_msg": {{error_msg}}
+            </label>
+
+        </div>
+    </div>
+</mat-card>

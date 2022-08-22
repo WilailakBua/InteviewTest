@@ -8,6 +8,10 @@ import { HerosModule } from './heros/heros.module';
 import { PostsModule } from './posts/posts.module';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TriangleModule } from './triangle/triangle.module';
+import { CritizenIdComponent } from './critizen-id/critizen-id.component';
+import { CritizenIdModule } from './critizen-id/critizen-id.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HerosModule,
     PostsModule,
     BrowserAnimationsModule,
-    
+    TriangleModule,
+    CritizenIdModule
   ],
   providers: [],
   bootstrap: [AppComponent]
